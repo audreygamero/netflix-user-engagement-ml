@@ -1,20 +1,14 @@
 # Netflix User Engagement & Recommendation System
-
 This project explores how machine learning can improve user engagement and retention on a streaming platform like **Netflix**. We build a system that:
-
 - Recommends movies based on content and platform availability 
 - Predicts user churn with simulated behavioral data 
 - Visualizes how recommendations increase engagement 
-
-##  Features
-
 ### Content-Based Movie Recommendation
 - Combines genre, description, and streaming platform data
 - Recommends movies using **TF-IDF** and **cosine similarity**
 - Two types of recommendations:
   - Based on movie title
   - Based on favorite genres
-
 ### Churn Prediction Model
 - Simulates 1,000 users with features like:
   - Average watch time
@@ -23,15 +17,11 @@ This project explores how machine learning can improve user engagement and reten
   - Premium status
 - Trains a **Random Forest Classifier** to predict churn
 - Outputs a **classification report** and **confusion matrix** (saved to `visuals/`)
-
 ### Engagement Analysis
 - Simulates user watch time before and after personalized recommendations
 - Shows improvement with a histogram
 - Plot saved to: `visuals/engagement_comparison.png`
-
-
 ## Installation
-
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/netflix-user-engagement-ml.git
@@ -42,13 +32,6 @@ cd netflix-user-engagement-ml
 ```bash
 pip install -r requirements.txt
 ```
-
-3. Make sure you have the following files in the `data/` folder:
-   - `n_movies.csv`
-   - `MoviesOnStreamingPlatforms.csv`
-   - `netflix_revenue_updated.csv`
-
-
 ## Running the Code
 
 - Run the recommender system:
@@ -69,8 +52,3 @@ python src/engagement_plot.py
 - For any visualizations or charts used in the presentation, see the `visuals/` folder.
 
 ---
-
-**To run any code in this repo, install the libraries first:**
-```bash
-pip install -r requirements.txt
-```
